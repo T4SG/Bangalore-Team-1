@@ -16,40 +16,56 @@
 		  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
           <link rel="stylesheet" href="styles.css">
 
+
 </head>
 
-
-
 <body>
-
-<center><h1>School Visit Report</h1></center>
+<center><h2>Leading People Priorities</h2></center>
 <form>
 <table class="bordered" width="200" border="1">
   <tr>
-    <td>&nbsp;<h4><b>Name</b></h4></td>
+    <td>&nbsp;<h4><b>Categories</b></h4></td>
     <td>&nbsp;<h4><b>Score</b></h4></td>
   </tr>
   <tr>
-    <td>&nbsp;<b>Teacher Actions : </b><textarea name="" cols="2" rows="2"></textarea></td>
-    <td>&nbsp; <textarea name="" cols="1" rows="1"></textarea></td>
+    <td>&nbsp;<b>Category 1 : </b><textarea name="" cols="2" rows="2"></textarea></td>
+    <td>&nbsp; <p class="range-field">
+      <input type="range" id="t1" min="0" max="100" />
+    </p></td>
   </tr>
   <tr>
-    <td>&nbsp;<b>Student Actions : </b><textarea name="" cols="2" rows="2"></textarea></td>
-    <td>&nbsp;<textarea name="" cols="1" rows="1"></textarea></td>
+    <td>&nbsp;<b>Category 2 : </b><textarea name="" cols="2" rows="2"></textarea></td>
+<td>&nbsp; <p class="range-field">
+      <input type="range" id="t2" min="0" max="100" />
+    </p></td>
   </tr>
   <tr>
-    <td>&nbsp;<b>Environment : </b><textarea name="" cols="2" rows="2"></textarea></td>
-    <td>&nbsp;<textarea name="" cols="1" rows="1"></textarea></td>
+    <td>&nbsp;<b>Category 3 : </b><textarea name="" cols="2" rows="2"></textarea></td>
+<td>&nbsp; <p class="range-field">
+      <input type="range" id="t3" min="0" max="100" />
+    </p></td>
   </tr>
   <tr>
-    <td>&nbsp;<b>Labs : </b><textarea name="" cols="2" rows="2"></textarea></td>
-    <td>&nbsp;<textarea name="" cols="1" rows="1"></textarea></td>
+    <td>&nbsp;<b>Category 4 : </b><textarea name="" cols="2" rows="2"></textarea></td>
+<td>&nbsp; <p class="range-field">
+      <input type="range" id="t4" min="0" max="100" />
+    </p></td>
   </tr>
   <tr>
-    <td>&nbsp;<b>Neatness : </b><textarea name="" cols="2" rows="2"></textarea></td>
-    <td>&nbsp;<textarea name="" cols="1" rows="1"></textarea></td>
+    <td>&nbsp;<b>Category 5 : </b><textarea name="" cols="2" rows="2"></textarea></td>
+<td>&nbsp; <p class="range-field">
+      <input type="range" id="t5" min="0" max="100" />
+    </p></td>
   </tr>
 </table>
+<div class=" col s6">	<br />
+
+						<center>	<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+								<i class="fa fa-paper-plane"></i>
+							</button>
+						</div></center>
+						
 </form>
+
 </body>
 </html>
