@@ -1,6 +1,8 @@
+html>
+<body>
 <?php
 session_start(); // Starting Session
-if (isset($_POST['actionlogin'])) {
+if (isset($_POST['submit'])) {
 if (empty($_POST['username']) || empty($_POST['password'])) {
 $error = "Username or Password is invalid";
 echo "$error";
@@ -32,3 +34,5 @@ mysql_close($connection); // Closing Connection
 }
 }
 ?>
+</body>
+</html>
