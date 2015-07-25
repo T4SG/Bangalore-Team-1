@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>ISLI Staff</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<!-- Latest compiled and minified Jquery -->
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<!-- Latest compiled and minified Jquery UI-->
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Dosis|Droid+Sans|Lobster' rel='stylesheet' type='text/css'>
+		 <!-- Compiled and minified CSS -->
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		  <!-- Compiled and minified JavaScript -->
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+          <link rel="stylesheet" href="css/styles.css">
+		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		  <script src="Chart.js"></script>
+
+
+</head>
+
+<body>
+<!-- Page Layout here -->
+		
+
+<div class="container center">
+				
+      
+				<div class="row wrapper ">
+
+					<div class="col s12 ">
+						<div style="width: 80%">
+							<div id="canvas-holder">
+								<canvas id="chart-area" width="500" height="500"/>
+							</div>
+
+				
+					
+					
+
+					
+						</div>
+
+
+				
+					</div>
+				</div>
+				
+				
+      
+
+    
+    </div>     
+<script>
+
+		var doughnutData = [
+				{
+					value: 300,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Red"
+				},
+				{
+					value: 50,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Green"
+				},
+				{
+					value: 100,
+					color: "#FDB45C",
+					highlight: "#FFC870",
+					label: "Yellow"
+				},
+				{
+					value: 40,
+					color: "#949FB1",
+					highlight: "#A8B3C5",
+					label: "Grey"
+				},
+				{
+					value: 120,
+					color: "#4D5360",
+					highlight: "#616774",
+					label: "Dark Grey"
+				}
+
+			];
+
+			window.onload = function(){
+				var ctx = document.getElementById("chart-area").getContext("2d");
+				window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true});
+			};
+
+
+
+	</script>
+
+</body>
+</html>
