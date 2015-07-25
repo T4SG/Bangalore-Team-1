@@ -1,6 +1,6 @@
 <?php
 /* Database config */
-$db_host		= 'ec2-52-69-w4-64';
+$db_host		= 'ec2-52-69-44-64.ap-northeast-1.compute.amazonaws.com';
 $db_user		= 'root';
 $db_pass		= 'code4good';
 $db_database	= 'ISLI'; 
