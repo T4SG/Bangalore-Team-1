@@ -2,6 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>ISLI Staff</title>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<!-- Latest compiled and minified Jquery -->
@@ -23,42 +29,17 @@
 
 <body>
 <!-- Page Layout here -->
-    
-	
-					<nav>
-    <div class="nav-wrapper white">
-      <a href="#!" class="brand-logo"><span style="    color: #26a69a;">School Name</span></a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><span style="    color: #26a69a;"><i class="material-icons">menu</i></span></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html"><span style="    color: #26a69a;">Page 1</span></a></li>
-        <li><a href="badges.html"><span style="    color: #26a69a;">Page 1</span></a></li>
-        <li><a href="collapsible.html"><span style="    color: #26a69a;">Page 1</span></a></li>
-        <li><a href="mobile.html"><span style="    color: #26a69a;">Logout</span></a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html"><span style="    color: #26a69a;">Page 1</span></a></li>
-        <li><a href="badges.html"><span style="    color: #26a69a;">Page 1</span></a></li>
-        <li><a href="collapsible.html"><span style="    color: #26a69a;">Page 1</span></a></li>
-        <li><a href="mobile.html"><span style="    color: #26a69a;">Logout</span></a></li>
-      </ul>
-    </div>
-  </nav>
+
 <div class="container center">
 				
       
 				<div class="row wrapper ">
 
 					<div class="col s12 ">
-						<iframe height="300" width="100%"src="bar-chart.html">
-							  
-						</iframe>
+						<div style="width: 80%">
+							<canvas id="canvas" height="350" width="600"></canvas>
+						</div>
 
-						<iframe height="300" width="100%"src="doughnut.html">
-							  
-						</iframe>
-                            <iframe height="300" width="100%"src="line-chart.html">
-							  
-						</iframe>
 
 				
 					</div>
@@ -69,7 +50,45 @@
 
     
     </div>     
-     
+  <script>
+			var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+		var lineChartData = {
+			labels : ["January","February","March","April","May","June","July"],
+			datasets : [
+				{
+					label: "My First dataset",
+					fillColor : "rgba(220,220,220,0.2)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(220,220,220,1)",
+					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+				},
+				{
+					label: "My Second dataset",
+					fillColor : "rgba(151,187,205,0.2)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "rgba(151,187,205,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(151,187,205,1)",
+					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+				}
+			]
+
+		}
+
+	window.onload = function(){
+		var ctx = document.getElementById("canvas").getContext("2d");
+		window.myLine = new Chart(ctx).Line(lineChartData, {
+			responsive: true
+		});
+	}
+
+
+
+	</script>     
         
 </body>
 
@@ -90,4 +109,8 @@
 	
 		});
 </script>
+</html>
+
+<body>
+</body>
 </html>
