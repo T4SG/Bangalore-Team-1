@@ -18,14 +18,14 @@ $password = stripslashes($password);
 $username = mysql_real_escape_string($username);
 $password = mysql_real_escape_string($password);
 // Selecting Database
-$db = mysql_select_db("cbit", $connection);
+$db = mysql_select_db("ISLI", $connection);
 // SQL query to fetch information of registerd users and finds user match.
 $query = mysql_query("select * from principal where pricipal_id='$username' AND password='$password'", $connection);
 $rows = mysql_num_rows($query);
 echo "$rows";
 if ($rows == 1) {
 $_SESSION['login_user']=$username; // Initializing Session
-header("location: petition.php"); // Redirecting To Other Page
+header("location: index.html"); // Redirecting To Other Page
 } else {
 $error = "Username or Password is invalid";	
 echo "$error";
