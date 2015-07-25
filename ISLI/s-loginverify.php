@@ -1,8 +1,6 @@
-html>
-<body>
 <?php
 session_start(); // Starting Session
-if (isset($_POST['submit'])) {
+if (isset($_POST['actionlogin'])) {
 if (empty($_POST['username']) || empty($_POST['password'])) {
 $error = "Username or Password is invalid";
 echo "$error";
@@ -20,12 +18,12 @@ $password = mysql_real_escape_string($password);
 // Selecting Database
 $db = mysql_select_db("ISLI", $connection);
 // SQL query to fetch information of registerd users and finds user match.
-$query = mysql_query("select * from principal where principal_id='$username' AND password='$password'", $connection);
+$query = mysql_query("select * from isli_staff where staff_id='$username' AND password='$password'", $connection);
 $rows = mysql_num_rows($query);
 echo "$rows";
 if ($rows == 1) {
 $_SESSION['login_user']=$username; // Initializing Session
-header("location: index.html"); // Redirecting To Other Page
+header("location: petition.php"); // Redirecting To Other Page
 } else {
 $error = "Username or Password is invalid";	
 echo "$error";
@@ -34,5 +32,3 @@ mysql_close($connection); // Closing Connection
 }
 }
 ?>
-</body>
-</html>

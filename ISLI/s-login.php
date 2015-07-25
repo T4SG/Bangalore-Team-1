@@ -29,17 +29,16 @@
 							<img src="logo.gif" alt="Logo" height="100" width="100">
 						</div>
 				
-			<!--START -->
-			<form action="p-loginverify.php" method="post">		
+			<!--START -->		
 					  <div class="row ">
 						<div class="input-field col s12">
 						  
-						  <input id="username" type="text" class="validate" name="username">
+						  <input id="username" type="text" class="validate">
 						  <label for="username">Username</label>
 						</div>
 						<div class="input-field col s12">
 						  
-						  <input id="password" type="password" class="validate" name="password">
+						  <input id="password" type="tel" class="validate">
 						  <label for="password">Password</label>
 						</div>
 					  </div>
@@ -50,17 +49,16 @@
 			<!--START -->
 				<div class="row ">
 						<div class=" col s6">	
-						<a href=""><button class="btn waves-effect waves-light" type="submit" name="action">Login
+							<button class="btn waves-effect waves-light" type="submit" name="actionlogin">Login
 								<i class="fa fa-paper-plane"></i>
-							</button></a>
+							</button>
 						</div>
 						<div class=" col s6">
-						<a href=""><button class="btn waves-effect waves-light"  name="action">Forgot
+						<a href=""><button class="btn waves-effect waves-light"  name="actionforgot">Forgot
 								<i class="fa fa-pencil-square-o"></i>
 							</button></a>
 						</div>
 				</div>
-				</form>
 			<!--END -->	
 				</div>
 			</div>
