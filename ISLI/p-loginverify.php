@@ -20,7 +20,7 @@ $password = mysql_real_escape_string($password);
 // Selecting Database
 $db = mysql_select_db("cbit", $connection);
 // SQL query to fetch information of registerd users and finds user match.
-$query = mysql_query("select * from principal where pricipal_id='$username' AND password='$password'", $connection);
+$query = mysql_query("select * from principal where principal_id='$username' AND password='$password'", $connection);
 $rows = mysql_num_rows($query);
 echo "$rows";
 if ($rows == 1) {
