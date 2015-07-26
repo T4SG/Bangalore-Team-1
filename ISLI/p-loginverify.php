@@ -1,3 +1,4 @@
+/*this particular php demonstrates about the principal login credentials*/
 <?php
 session_start(); // Starting Session
 include("connect.php");
