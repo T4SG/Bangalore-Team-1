@@ -60,10 +60,10 @@
 		datasets : [
 			
 			{
-				fillColor : "rgba(151,187,205,0.5)",
-				strokeColor : "rgba(151,187,205,0.8)",
-				highlightFill : "rgba(151,187,205,0.75)",
-				highlightStroke : "rgba(151,187,205,1)",
+				fillColor : "rgba(00,77,64,0.5)",
+				strokeColor : "rgba(00,77,64,0.5)",
+				highlightFill : "rgba(rgba(00,77,64,0.5))",
+				highlightStroke : "rgba(00,77,64,0.5)",
 				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
 			}
 		]
