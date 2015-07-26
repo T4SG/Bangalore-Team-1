@@ -18,26 +18,52 @@
 		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		  <script src="Chart.js"></script>
 
-
+<style>
+iframe{
+    overflow:hidden;
+}
+</style>
 </head>
 
 <body>
 <!-- Page Layout here -->
-<?php
-  include('connect.php');
-  $cnt=mysql_query(select );
-  for(int $i=0
-      ?>
+ 
+	
+					<nav>
+    <div class="nav-wrapper white">
+      <a href="#!" class="brand-logo"><span style="    color: #26a69a;">School Name</span></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><span style="    color: #26a69a;"><i class="material-icons">menu</i></span></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html"><span style="    color: #26a69a;">Page 1</span></a></li>
+        <li><a href="badges.html"><span style="    color: #26a69a;">Page 1</span></a></li>
+        <li><a href="collapsible.html"><span style="    color: #26a69a;">Page 1</span></a></li>
+        <li><a href="mobile.html"><span style="    color: #26a69a;">Logout</span></a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html"><span style="    color: #26a69a;">Page 1</span></a></li>
+        <li><a href="badges.html"><span style="    color: #26a69a;">Page 1</span></a></li>
+        <li><a href="collapsible.html"><span style="    color: #26a69a;">Page 1</span></a></li>
+        <li><a href="mobile.html"><span style="    color: #26a69a;">Logout</span></a></li>
+      </ul>
+    </div>
+  </nav>
+  
 <div class="container center">
 				
       
 				<div class="row wrapper ">
 
 					<div class="col s12 ">
-						<div style="width: 80%">
-							<canvas id="canvas" height="350" width="600"></canvas>
-						</div>
+						<iframe height="250" width="100%"  frameBorder="0" src="bar-chart.php">
+							  
+						</iframe>
 
+						<iframe height="400" width="100%"  frameBorder="0" src="doughnut.html">
+							  
+						</iframe>
+                            <iframe height="300" width="100%"  frameBorder="0" src="line-chart.html">
+							  
+						</iframe>
 
 				
 					</div>
@@ -48,32 +74,7 @@
 
     
     </div>     
-	   
-  <script>
-	var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
-
-	var barChartData = {
-		labels : ["January","February","March","April","May","June","July"],
-		datasets : [
-			
-			{
-				fillColor : "rgba(151,187,205,0.5)",
-				strokeColor : "rgba(151,187,205,0.8)",
-				highlightFill : "rgba(151,187,205,0.75)",
-				highlightStroke : "rgba(151,187,205,1)",
-				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-			}
-		]
-
-	}
-	window.onload = function(){
-		var ctx = document.getElementById("canvas").getContext("2d");
-		window.myBar = new Chart(ctx).Bar(barChartData, {
-			responsive : true
-		});
-	}
-
-	</script>     
+     
         
 </body>
 

@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html >
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>ISLI Staff</title>
@@ -22,12 +22,8 @@
 </head>
 
 <body>
+
 <!-- Page Layout here -->
-<?php
-  include('connect.php');
-  $cnt=mysql_query(select );
-  for(int $i=0
-      ?>
 <div class="container center">
 				
       
@@ -49,11 +45,18 @@
     
     </div>     
 	   
-  <script>
+  <script type="text/javascript" >
+  <?php
+  include('connect.php');
+      $ta=mysql_query("select score from 'school_visit'");
+    
+	  ?>
+
+
 	var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
 
 	var barChartData = {
-		labels : ["January","February","March","April","May","June","July"],
+		labels : ["Teacher Actions","Student Actions","Environment","Labs","Neatness"],
 		datasets : [
 			
 			{
@@ -65,7 +68,7 @@
 			}
 		]
 
-	}
+	};
 	window.onload = function(){
 		var ctx = document.getElementById("canvas").getContext("2d");
 		window.myBar = new Chart(ctx).Bar(barChartData, {
@@ -74,11 +77,11 @@
 	}
 
 	</script>     
-        
+       
 </body>
 
 
-<script>
+<script >
 	$(document).ready(function(){
 		//NAVBAR
 		$(".button-collapse").sideNav();
@@ -88,7 +91,7 @@
       accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
     });
 	 
-  );
+ 
 	
 	
 	
