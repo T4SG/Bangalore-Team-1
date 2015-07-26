@@ -1,3 +1,5 @@
+/*connecting to a database*/
+
 <?php
 /* Database config */
 $db_host		= 'ec2-52-69-44-64.ap-northeast-1.compute.amazonaws.com';
@@ -7,7 +9,7 @@ $db_database	= 'ISLI';
  
 /* End config */
  
-$db = new PDO('mysql:host='.$db_host.';dbname='.$db_database, $db_user, $db_pass);
+$db = new PDO('mysql:host='.$db_host.';dbname='.$db_database, $db_user, $db_pass);  //giving connecting to host and database
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 // Connect to server and select database.

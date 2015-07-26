@@ -25,8 +25,8 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `isli_staff`
 --
-
-CREATE TABLE IF NOT EXISTS `isli_staff` (
+/* this describes all the tables used in the database for insertion, deletion.madification and retreiving*/
+CREATE TABLE IF NOT EXISTS `isli_staff` (                            //staff table login
   `staff_id` int(20) NOT NULL AUTO_INCREMENT,
   `staff_name` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `isli_staff` (
 -- Dumping data for table `isli_staff`
 --
 
-INSERT INTO `isli_staff` (`staff_id`, `staff_name`, `username`, `password`, `email`) VALUES
+INSERT INTO `isli_staff` (`staff_id`, `staff_name`, `username`, `password`, `email`) VALUES       
 (1, 'venkat', 'venkat', 'venkat', 'v@gmail.com'),
 (2, 'passd', 'root', 'code4good', 'p@dddd.com'),
 (3, '', '', '', ''),
@@ -51,7 +51,7 @@ INSERT INTO `isli_staff` (`staff_id`, `staff_name`, `username`, `password`, `ema
 -- Table structure for table `principal`
 --
 
-CREATE TABLE IF NOT EXISTS `principal` (
+CREATE TABLE IF NOT EXISTS `principal` (                              //admin page login details
   `principal_id` int(20) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
@@ -76,7 +76,7 @@ INSERT INTO `principal` (`principal_id`, `username`, `password`, `principal_name
 -- Table structure for table `priority`
 --
 
-CREATE TABLE IF NOT EXISTS `priority` (
+CREATE TABLE IF NOT EXISTS `priority` (                         //priority table
   `id` int(11) NOT NULL,
   `priority_name` varchar(50) NOT NULL,
   `status` varchar(50) NOT NULL,
@@ -100,7 +100,7 @@ INSERT INTO `priority` (`id`, `priority_name`, `status`, `rank`, `domain`, `scor
 -- Table structure for table `school_table`
 --
 
-CREATE TABLE IF NOT EXISTS `school_table` (
+CREATE TABLE IF NOT EXISTS `school_table` (                         //school tables gives all details
   `school_name` varchar(50) NOT NULL,
   `school_id` int(11) NOT NULL AUTO_INCREMENT,
   `staff_id` int(11) NOT NULL,
@@ -113,7 +113,7 @@ CREATE TABLE IF NOT EXISTS `school_table` (
 -- Table structure for table `school_visit`
 --
 
-CREATE TABLE IF NOT EXISTS `school_visit` (
+CREATE TABLE IF NOT EXISTS `school_visit` (                     //school visits gives the description of all the schools
   `visit` int(11) NOT NULL,
   `school_id` int(11) NOT NULL,
   `principal_id` int(11) NOT NULL,
