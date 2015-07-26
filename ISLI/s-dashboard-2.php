@@ -34,16 +34,16 @@ iframe{
       <a href="#!" class="brand-logo"><span style="    color: #26a69a;">School Name</span></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><span style="    color: #26a69a;"><i class="material-icons">menu</i></span></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html"><span style="    color: #26a69a;">Page 1</span></a></li>
-        <li><a href="badges.html"><span style="    color: #26a69a;">Page 1</span></a></li>
-        <li><a href="collapsible.html"><span style="    color: #26a69a;">Page 1</span></a></li>
-        <li><a href="mobile.html"><span style="    color: #26a69a;">Logout</span></a></li>
+        <li><a href="spage1.php"><span style="    color: #26a69a;">Home</span></a></li>
+        <li><a href="s-dashboard-2.php"><span style="    color: #26a69a;">Dashboard</span></a></li>
+        <li><a href="collapsible.html"><span style="    color: #26a69a;">Forum</span></a></li>
+        <li><a href="index.html"><span style="    color: #26a69a;">Logout</span></a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html"><span style="    color: #26a69a;">Page 1</span></a></li>
-        <li><a href="badges.html"><span style="    color: #26a69a;">Page 1</span></a></li>
-        <li><a href="collapsible.html"><span style="    color: #26a69a;">Page 1</span></a></li>
-        <li><a href="mobile.html"><span style="    color: #26a69a;">Logout</span></a></li>
+        <li><a href="spage1.php"><span style="    color: #26a69a;">Home</span></a></li>
+        <li><a href="s-dashboard-2.php"><span style="    color: #26a69a;">Dashboard</span></a></li>
+        <li><a href="collapsible.html"><span style="    color: #26a69a;">Forum</span></a></li>
+        <li><a href="index.html"><span style="    color: #26a69a;">Logout</span></a></li>
       </ul>
     </div>
   </nav>
