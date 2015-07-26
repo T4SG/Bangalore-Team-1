@@ -1,7 +1,6 @@
-html>
-<body>
 <?php
 session_start(); // Starting Session
+include("connect.php");
 if (isset($_POST['submit'])) {
 if (empty($_POST['username']) || empty($_POST['password'])) {
 $error = "Username or Password is invalid";
@@ -11,7 +10,7 @@ else
 {
 $username=$_POST['username'];
 $password=$_POST['password'];
-include("connect.php");
+
 // To protect MySQL injection for Security purpose
 $username = stripslashes($username);
 $password = stripslashes($password);
@@ -25,7 +24,7 @@ $rows = mysql_num_rows($query);
 echo "$rows";
 if ($rows == 1) {
 $_SESSION['login_user']=$username; // Initializing Session
-header("location: index.html"); // Redirecting To Other Page
+header("location: spage1.php"); // Redirecting To Other Page
 } else {
 $error = "Username or Password is invalid";	
 echo "$error";
@@ -34,5 +33,3 @@ mysql_close($connection); // Closing Connection
 }
 }
 ?>
-</body>
-</html>
