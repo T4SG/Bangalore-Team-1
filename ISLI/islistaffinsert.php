@@ -1,3 +1,4 @@
+/*Inserting the details into the ISLI staff admin table for the login credentials*/
 <?php
 include('connect.php');
 // Get values from form 
@@ -7,7 +8,7 @@ $staff_name=$_POST['name'];
 $username=$_POST['username'];
 $password=$_POST['password'];
 $email_id=$_POST['email'];
-// Insert data into mysql 
+// Insert data into mysql  and executing the query
 $sql="INSERT INTO $tbl_name(staff_id,staff_name,username,password,email_id)VALUES('$staff_id','$staff_name','$username','$password','$email_id')";
 $result=mysql_query($sql);
 // if successfully insert data into database, displays message "Successful". 
