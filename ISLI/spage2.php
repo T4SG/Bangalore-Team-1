@@ -38,10 +38,17 @@
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
+<<<<<<< HEAD
                     zoom: 10,
 
                     // The latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(18.9750, 72.82580), // New York
+=======
+                    zoom: 11,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+>>>>>>> 6d67c6e998d041fbe54d4e104a19ab7b96af9114
 
                     // How you would like to style the map. 
                     // This is where you would paste any style found on Snazzy Maps.
@@ -57,7 +64,11 @@
 
                 // Let's also add a marker while we're at it
                 var marker = new google.maps.Marker({
+<<<<<<< HEAD
                     position: new google.maps.LatLng(18.9750, 72.82580),
+=======
+                    position: new google.maps.LatLng(40.6700, -73.9400),
+>>>>>>> 6d67c6e998d041fbe54d4e104a19ab7b96af9114
                     map: map,
                     title: 'isli'
                 });
@@ -66,6 +77,7 @@
 	<div id="map"></div>
 					<nav>
     <div class="nav-wrapper white">
+<<<<<<< HEAD
       <a href="#!" class="brand-logo"><span style="    color: #26a69a;"><img src="http://indiaschoolleaders.org/wp-content/themes/isli/images/logo.gif" alt="Logo" height="50" width="50"></span></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><span style="    color: #26a69a;"><i class="material-icons">menu</i></span></a>
       <ul class="right hide-on-med-and-down">
@@ -79,6 +91,21 @@
         <li><a href="s-dashboard-2.php"><span style="    color: #26a69a;">Dashboard</span></a></li>
         <li><a href="collapsible.html"><span style="    color: #26a69a;">Forum</span></a></li>
         <li><a href="index.html"><span style="    color: #26a69a;">Logout</span></a></li>
+=======
+      <a href="http://indiaschoolleaders.org/wp-content/themes/isli/images/logo.gif" class="brand-logo"><span style="    color: #26a69a;">School Name</span></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><span style="    color: #26a69a;"><i class="material-icons">menu</i></span></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html"><span style="    color: #26a69a;">Page 1</span></a></li>
+        <li><a href="badges.html"><span style="    color: #26a69a;">Page 1</span></a></li>
+        <li><a href="collapsible.html"><span style="    color: #26a69a;">Page 1</span></a></li>
+        <li><a href="mobile.html"><span style="    color: #26a69a;">Logout</span></a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html"><span style="    color: #26a69a;">Page 1</span></a></li>
+        <li><a href="badges.html"><span style="    color: #26a69a;">Page 1</span></a></li>
+        <li><a href="collapsible.html"><span style="    color: #26a69a;">Page 1</span></a></li>
+        <li><a href="mobile.html"><span style="    color: #26a69a;">Logout</span></a></li>
+>>>>>>> 6d67c6e998d041fbe54d4e104a19ab7b96af9114
       </ul>
     </div>
   </nav>
@@ -96,10 +123,17 @@
 						  <div class="collapsible-header" style=" color: #fff;   background-color: #26a69a;"><strong>SCHOOL VISITS</strong></div>
 						  <div class="collapsible-body" style="text-align:left;">
 						  
+<<<<<<< HEAD
 								<form>
 								<div class="container ">
 
 <?php
+=======
+								
+								<div class="container ">
+
+						<?php
+>>>>>>> 6d67c6e998d041fbe54d4e104a19ab7b96af9114
 							include("connect.php");
 								session_start(); 
 								
@@ -120,13 +154,24 @@
 												<input placeholder='Comments' id='first_name' type='text' length='300' class='validate'>
 												<label for='first_name'>"; 
 												echo $resu['category'];
+<<<<<<< HEAD
+=======
+												$cat = $resu['category'];
+>>>>>>> 6d67c6e998d041fbe54d4e104a19ab7b96af9114
 												echo $resu['score'];
 
 										echo "</label>
 											  </div>
+<<<<<<< HEAD
 											<form action='rating.php' mehtod='post'>
 											<div >
 											<input type='text' name='rating'>
+=======
+											<form action='ratingvisits.php' method='post'>
+											<div >
+											<input type='text' name='rating'>
+											<input type='hidden' name='category' value='$cat'>
+>>>>>>> 6d67c6e998d041fbe54d4e104a19ab7b96af9114
 											<input type='submit' />
 											
 											</div>
@@ -135,6 +180,17 @@
 								
 									}
 							}
+<<<<<<< HEAD
+=======
+							if(isset($_GET['value']))
+  							{
+						    if($_GET['value']=="success")
+						      echo "<script> alert('success');</script>";
+						    else if($_GET['value']=="fail")
+						      echo "<script> alert('fail');</script>";
+						  
+						    }
+>>>>>>> 6d67c6e998d041fbe54d4e104a19ab7b96af9114
 					?>
 
 								
@@ -155,7 +211,11 @@
 																 
 								
 								
+<<<<<<< HEAD
 								</form>
+=======
+								
+>>>>>>> 6d67c6e998d041fbe54d4e104a19ab7b96af9114
 						  
 						  </div>
 						</li>
@@ -170,12 +230,18 @@
 						  <div class="row">
 							<div class="col s12">
 							  <ul class="tabs">
+<<<<<<< HEAD
 								<li class="tab col s4"><a href="#test1">
 People</a></li>
 								<li class="tab col s4"><a class="active" href="#test2">
 Learning</a></li>
 								<li class="tab col s4 "><a href="#test3">
  Equity</a></li>
+=======
+								<li class="tab col s4"><a href="#test1">Leading People</a></li>
+								<li class="tab col s4"><a class="active" href="#test2">Leading Learning</a></li>
+								<li class="tab col s4 "><a href="#test3">Leading in Equity</a></li>
+>>>>>>> 6d67c6e998d041fbe54d4e104a19ab7b96af9114
 								
 							  </ul>
 							</div>
@@ -183,6 +249,7 @@ Learning</a></li>
 							
 							<form>
 								<div class="container ">
+<<<<<<< HEAD
 								<div class="row ">
 									 <div class="input-field col s6">
 										<input placeholder="Comments" id="first_name" type="text" length="300" class="validate">
@@ -248,6 +315,57 @@ Learning</a></li>
 									
 									</div>
 								</div>
+=======
+								
+								
+								<?php
+							include("connect.php");
+								session_start(); 
+								
+								if(isset($_GET['id']))
+								{
+									$id=$_GET['id'];
+									echo $id;	
+									$priorities = mysql_query("select * from priority where school_id= '$id' and domain ='1'");
+									$ids = mysql_num_rows($priorities);
+		     						  echo $ids;
+									while($result = mysql_fetch_array($priorities)){
+					
+										
+							
+								
+										echo "<div class='row'>
+											 <div class=input-field col s6'>
+												<input placeholder='Comments' id='first_name' type='text' length='300' class='validate'>
+												<label for='first_name'>"; 
+												echo $result['priority_name'];
+												$cat = $result['priority_name'];
+												echo $result['score'];
+
+										echo "</label>
+											  </div>
+											<form action='ratingpriorities.php' method='post'>
+											<div >
+											<input type='text' name='rating'>
+											<input type='hidden' name='priority' value='$cat'>
+											<input type='submit' />
+											
+											</div>
+											</form>
+										</div>";
+								
+									}
+							}
+							if(isset($_GET['value']))
+  							{
+						    if($_GET['value']=="success")
+						      echo "<script> alert('success');</script>";
+						    else if($_GET['value']=="fail")
+						      echo "<script> alert('fail');</script>";
+						  
+						    }
+					?>
+>>>>>>> 6d67c6e998d041fbe54d4e104a19ab7b96af9114
 								
 							</div>
 							
@@ -259,6 +377,7 @@ Learning</a></li>
 							
 							<form>
 								<div class="container ">
+<<<<<<< HEAD
 								<div class="row ">
 									 <div class="input-field col s6">
 										<input placeholder="Comments" id="first_name" type="text" length="300" class="validate">
@@ -324,6 +443,57 @@ Learning</a></li>
 									
 									</div>
 								</div>
+=======
+
+
+								<?php
+							include("connect.php");
+								session_start(); 
+								
+								if(isset($_GET['id']))
+								{
+									$id=$_GET['id'];
+									echo $id;	
+									$priorities = mysql_query("select * from priority where school_id= '$id' and domain ='2'");
+									$ids = mysql_num_rows($priorities);
+		     						  echo $ids;
+									while($result = mysql_fetch_array($priorities)){
+					
+										
+							
+								
+										echo "<div class='row'>
+											 <div class=input-field col s6'>
+												<input placeholder='Comments' id='first_name' type='text' length='300' class='validate'>
+												<label for='first_name'>"; 
+												echo $result['priority_name'];
+												$cat = $result['priority_name'];
+												echo $result['score'];
+
+										echo "</label>
+											  </div>
+											<form action='ratingpriorities.php' method='post'>
+											<div >
+											<input type='text' name='rating'>
+											<input type='hidden' name='priority' value='$cat'>
+											<input type='submit' />
+											
+											</div>
+											</form>
+										</div>";
+								
+									}
+							}
+							if(isset($_GET['value']))
+  							{
+						    if($_GET['value']=="success")
+						      echo "<script> alert('success');</script>";
+						    else if($_GET['value']=="fail")
+						      echo "<script> alert('fail');</script>";
+						  
+						    }
+					?>
+>>>>>>> 6d67c6e998d041fbe54d4e104a19ab7b96af9114
 								
 							</div>
 							</form>
@@ -333,6 +503,7 @@ Learning</a></li>
 							<div id="test3" class="col s12">
 							<form>
 								<div class="container ">
+<<<<<<< HEAD
 								<div class="row ">
 									 <div class="input-field col s6">
 										<input placeholder="Comments" id="first_name" type="text" length="300" class="validate">
@@ -398,6 +569,59 @@ Learning</a></li>
 									
 									</div>
 								</div>
+=======
+
+
+
+
+								<?php
+							include("connect.php");
+								session_start(); 
+								
+								if(isset($_GET['id']))
+								{
+									$id=$_GET['id'];
+									echo $id;	
+									$priorities = mysql_query("select * from priority where school_id= '$id' and domain ='3'");
+									$ids = mysql_num_rows($priorities);
+		     						  echo $ids;
+									while($result = mysql_fetch_array($priorities)){
+					
+										
+							
+								
+										echo "<div class='row'>
+											 <div class=input-field col s6'>
+												<input placeholder='Comments' id='first_name' type='text' length='300' class='validate'>
+												<label for='first_name'>"; 
+												echo $result['priority_name'];
+												$cat = $result['priority_name'];
+												echo $result['score'];
+
+										echo "</label>
+											  </div>
+											<form action='ratingpriorities.php' method='post'>
+											<div >
+											<input type='text' name='rating'>
+											<input type='hidden' name='priority' value='$cat'>
+											<input type='submit' />
+											
+											</div>
+											</form>
+										</div>";
+								
+									}
+							}
+							if(isset($_GET['value']))
+  							{
+						    if($_GET['value']=="success")
+						      echo "<script> alert('success');</script>";
+						    else if($_GET['value']=="fail")
+						      echo "<script> alert('fail');</script>";
+						  
+						    }
+					?>
+>>>>>>> 6d67c6e998d041fbe54d4e104a19ab7b96af9114
 								
 							</div>
 								
