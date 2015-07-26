@@ -37,10 +37,10 @@
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
-                    zoom: 11,
+                    zoom: 9,
 
                     // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+                    center: new google.maps.LatLng(18.9750, 72.82580), // New York
 
                     // How you would like to style the map. 
                     // This is where you would paste any style found on Snazzy Maps.
@@ -56,7 +56,7 @@
 
                 // Let's also add a marker while we're at it
                 var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    position: new google.maps.LatLng(18.9750, 72.82580),
                     map: map,
                     title: 'isli'
                 });
@@ -65,7 +65,7 @@
 	<div id="map"></div>
 					<nav>
     <div class="nav-wrapper white">
-      <a href="#!" class="brand-logo"><span style="    color: #26a69a;">ISLI</span></a>
+      <a href="#!" class="brand-logo"><span style="    color: #26a69a;"><img src="http://indiaschoolleaders.org/wp-content/themes/isli/images/logo.gif" alt="Logo" height="50" width="50"></span></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><span style="    color: #26a69a;"><i class="material-icons">menu</i></span></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="spage1.php"><span style="    color: #26a69a;">Home</span></a></li>
@@ -74,15 +74,15 @@
         <li><a href="index.html"><span style="    color: #26a69a;">Logout</span></a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="spage.php"><span style="    color: #26a69a;">Home</span></a></li>
+        <li><a href="spage1.php"><span style="    color: #26a69a;">Home</span></a></li>
         <li><a href="s-dashboard-2.php"><span style="    color: #26a69a;">Dashboard</span></a></li>
         <li><a href="collapsible.html"><span style="    color: #26a69a;">Forum</span></a></li>
         <li><a href="index.html"><span style="    color: #26a69a;">Logout</span></a></li>
       </ul>
     </div>
   </nav>
-          
-	<div class="container center">
+ <div class=" ">         
+	<div class="container center ">
 				
       
 				<div class="row wrapper ">
@@ -103,7 +103,7 @@
 						  	echo "<a href='spage2.php?id=".$x."'>".$x." </a>";
 
 
-						  	echo "</div>";	
+						  	//echo "</div>";	
 }
 						  ?>						  
 						  </div>
@@ -117,7 +117,8 @@
 				</div>
 				<div class="row  ">
 					  <div class="col s12 "><a class="waves-effect waves-light btn col s12"><i class="material-icons left"></i>Workshop</a></div>
-					 </div>
+					 </div><br>
+
 					 <div class="row  ">
 					  <div class="col s12 "><a class="waves-effect waves-light btn col s12"><i class="material-icons left"></i>Dashboard</a></div></div>
 				 
@@ -129,7 +130,7 @@
     
     </div>     
         
-
+</div> 
 </body>
 <script>
 	$(document).ready(function(){
