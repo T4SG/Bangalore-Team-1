@@ -9,6 +9,8 @@
  */
 
 
+/*this program describes about the dashboard which only the admin could able to view it*/
+
 (function(){
 
 	"use strict";
