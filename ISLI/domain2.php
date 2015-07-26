@@ -1,3 +1,5 @@
+/*This demonstrates about the priority table connectivity and segregates the categories involved*/
+
 <?php
 include('connect.php');
 // Get values from form 
