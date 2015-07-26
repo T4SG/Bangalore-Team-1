@@ -1,3 +1,5 @@
+/*This particular code demonstrates about the domain network*/
+
 <?php
 include('connect.php');
 // Get values from form 
