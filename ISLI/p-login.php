@@ -50,9 +50,9 @@
 			<!--START -->
 				<div class="row ">
 						<div class=" col s6">	
-						<a href=""><button class="btn waves-effect waves-light" type="submit" name="action">Login
+							<button class="btn waves-effect waves-light" type="submit" name="submit">Login
 								<i class="fa fa-paper-plane"></i>
-							</button></a>
+							</button>
 						</div>
 						<div class=" col s6">
 						<a href=""><button class="btn waves-effect waves-light"  name="action">Forgot
