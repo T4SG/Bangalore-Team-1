@@ -1,0 +1,41 @@
+﻿Merge branch 'master' of https://github.com/T4SG/Bangalore-Team-1
+
+Conflicts:
+	ISLI/bar-chart.html
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 2 and 11 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	deleted:    bar-chart.html
+#	new file:   bar-chart.php
+#	new file:   domain1.php
+#	new file:   domain2.php
+#	new file:   domain3.php
+#	modified:   index.html
+#	modified:   p-login.php
+#	modified:   p-loginverify.php
+#	new file:   s-dashboard-2.php
+#	modified:   s-loginverify.php
+#	modified:   slogin.php
+#	new file:   spage1.php
+#
+# Untracked files:
+#	bargraph.PNG
+#	piechart.PNG
+#	plogin.txt
+#	slogin.txt
+#
+
